@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RescueMesh Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+</head>
+
+<body>
+
+    <header>
+        <h1>🚁 RescueMesh</h1>
+        <p>AI-Powered Disaster Rescue Dashboard</p>
+    </header>
+
+    <main>
+
+        <!-- Live Map -->
+        <section class="map-section">
+            <h2>Live Rescue Map</h2>
+            <div id="map"></div>
+        </section>
+
+        <!-- Dashboard Cards -->
+        <section class="dashboard">
+
+            <!-- Drone Details -->
+            <div class="card" id="droneDetails">
+                <h3>🚁 Drone Details</h3>
+                <p>Drone ID: <span id="droneId">Loading...</span></p>
+                <p>Battery: <span id="battery">Loading...</span></p>
+                <p>Status: <span id="droneStatus">Loading...</span></p>
+                <p>Latitude: <span id="droneLatitude">Loading...</span></p>
+                <p>Longitude: <span id="droneLongitude">Loading...</span></p>
+            </div>
+
+            <!-- Emergency -->
+            <div class="card" id="emergencyDetails">
+                <h3>🚨 Emergency</h3>
+                <p>Type: Flood</p>
+                <p>Status: Active</p>
+
+                <button id="emergencyBtn">
+                    Register Emergency
+                </button>
+
+                <p id="message" role="status"></p>
+            </div>
+
+            <!-- Victim Details -->
+            <div class="card" id="victimDetails">
+                <h3>🆘 Victim Details</h3>
+                <p>Loading victim data...</p>
+            </div>
+
+            <!-- Rescue Team -->
+            <div class="card" id="rescueTeamDetails">
+                <h3>🚑 Rescue Team</h3>
+                <p>Team: R1</p>
+                <p>Status: Available</p>
+
+                <button id="droneBtn">
+                    Simulate Demo Movement
+                </button>
+                <p id="droneMovementMessage" role="status"></p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Dashboard logic -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+# =========================
+# Python virtual environments
+# =========================
+venv/
+.venv/
+env/
+ai_venv/
+ai_venv*/
+venv312/
+yolovenv/
+**/yolovenv/
+
+# =========================
+# Python cache files
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+
+# =========================
+# Environment variables and secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Python packages and build files
+# =========================
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# =========================
+# Testing and build artifacts
+# =========================
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# =========================
+# Logs and temporary files
+# =========================
+*.log
+*.tmp
+
+# =========================
+# IDE and operating system files
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Machine learning model weights
+# =========================
+yolo11n.pt
+*.onnx
+*.engine
